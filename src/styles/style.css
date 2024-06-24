@@ -15,7 +15,7 @@ body {
     
     
     .container{
-        background: linear-gradient(-45deg, #bd0505 0%, red 60%, #f44c4c 100%);
+        background: linear-gradient(-55deg, #8F0B1A 5%, #C40c24 23%, #ba061e 25.2%, #C40c24 28.5%, #C40C24 80%, #D34E5D 87%, #E38691 95%);
         border-radius: 3em; 
         border: solid; 
         gap: 6em;
