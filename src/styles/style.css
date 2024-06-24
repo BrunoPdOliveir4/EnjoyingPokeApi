@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    gap: 0;
+    margin: 0;
+}
+
+body {
+    
+    background-color: #1f1f1f;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    
+    
+    .container{
+        background: linear-gradient(-45deg, #bd0505 0%, red 60%, #f44c4c 100%);
+        border-radius: 3em; 
+        border: solid; 
+        gap: 6em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: red;
+        aspect-ratio: 1;
+        height: 65%;
+        transition: transform 5s;
+
+        .centerball{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(0deg, transparent 37%, white 37%,
+            white 45%, aqua 45%, aqua 55%, white 55%, white 63%, transparent 63%);
+            height: 25vh;
+            width: 100%;
+            .whiteBall{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 35vh;
+                aspect-ratio: 1;
+                border-radius: 10em;
+                background: linear-gradient(0deg, white 46.2%, aqua 46.2%, aqua 53.8%, white 53.8%);
+                    
+                .ball {
+                    background: linear-gradient(0deg, transparent 45%, aqua 45%, aqua 55%, transparent 55%);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    aspect-ratio: 1;
+                    height: 30vh;
+                    border-radius: 10em;
+                    background-color: black;
+                    .whiteSpace{
+                        display: flex;
+                        align-items: center;
+                        aspect-ratio: 1;
+                        height: 15vh;
+                        border-radius: 10em;
+                        background-color: aqua;
+                        
+                    }
+                }
+            }   
+        }
+
+        .poke{
+            width: 40%;
+        }        
+
+        .inputs{
+            padding-top: 7em;
+            width:100%;
+            #pokeName{
+                background-color: black;
+                color: white;
+            }
+
+            display: flex;
+            flex-direction: column;
+
+            .input-btns{
+                margin: .5em;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                .btnNumbers{
+                    border:solid;
+                    padding: .5em;
+                    background-color: aqua;
+                    button {
+                        background-color: aqua;
+                        font-weight: bold;
+                        border: none;
+                    }
+                    button :hover {
+                        background-color: #6240dc;
+                    }
+                }
+                
+            }
+        }
+        
+    }
+    
+
+    .container :hover {
+        
+            height: 40vh;
+            background: linear-gradient(0deg, white 5%, aqua 5%, aqua 95%, white 95%);
+    
+            .whiteBall {
+                
+                height: 55vh;
+                aspect-ratio: .5;
+                background: linear-gradient(0deg, white 17.25%, aqua 17.25%, aqua 82.75%, white 82.75%);
+                .ball{
+                    height: 52.5vh;
+                    aspect-ratio: .45;
+                    background: linear-gradient(0deg, black 16%, aqua 16%, aqua 84%, black 84%);
+                    .whiteSpace {
+                        background: aqua;
+                        height: 42.5vh;
+                        aspect-ratio: .3;
+                    }
+                }
+            }            
+        }
+    }
+}
+
