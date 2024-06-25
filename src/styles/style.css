@@ -25,7 +25,7 @@ body {
         background-color: red;
         aspect-ratio: 1;
         height: 65%;
-        transition: transform 5s;
+        transition: transform 3s;
 
         .centerball{
             display: flex;
@@ -107,26 +107,30 @@ body {
 
     .container :hover {
         
-            height: 40vh;
-            background: linear-gradient(0deg, white 5%, aqua 5%, aqua 95%, white 95%);
-    
-            .whiteBall {
-                
-                height: 55vh;
-                aspect-ratio: .5;
-                background: linear-gradient(0deg, white 17.25%, aqua 17.25%, aqua 82.75%, white 82.75%);
-                .ball{
-                    height: 52.5vh;
-                    aspect-ratio: .45;
-                    background: linear-gradient(0deg, black 16%, aqua 16%, aqua 84%, black 84%);
-                    .whiteSpace {
-                        background: aqua;
-                        height: 42.5vh;
-                        aspect-ratio: .3;
-                    }
+        height: 40vh;
+        background: linear-gradient(0deg, white 5%, aqua 5%, aqua 95%, white 95%);
+
+        .whiteBall {
+            
+            height: 55vh;
+            aspect-ratio: .5;
+            background: linear-gradient(0deg, white 17.25%, aqua 17.25%, aqua 82.75%, white 82.75%);
+            .ball{
+                height: 52.5vh;
+                aspect-ratio: .45;
+                background: linear-gradient(0deg, black 16%, aqua 16%, aqua 84%, black 84%);
+                .whiteSpace {
+                    background: aqua;
+                    height: 42.5vh;
+                    aspect-ratio: .3;
                 }
-            }            
-        }
+            }
+        }            
+    }
+
+    .container.scaled{
+        transform: scale(5);
     }
 }
+
 

@@ -7,6 +7,9 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, 'templates/index.html'))
 });
 
+app.get("/pokedex", (req, res) => {
+    res.sendFile(path.join(__dirname, "templates/pokedex.html"))
+})
 
 
 
@@ -15,9 +18,16 @@ app.get("/scripts/principal", (req,res) =>{
     res.sendFile(path.join(__dirname, "scripts/principal.js"))
 });
 
+app.get("/scripts/pokedex", (req,res) =>{
+    res.sendFile(path.join(__dirname, "scripts/pokedexDrawer.js"))
+});
+
 //** CSS principal file getter */
 app.get("/styles/principal", (req,res) => {
     res.sendFile(path.join(__dirname, "styles/style.css"))
+})
+app.get("/styles/pokedex", (req,res) => {
+    res.sendFile(path.join(__dirname, "styles/pokedex.css"))
 })
 //** iMAGES GET ROUTES */
 app.get("/image/icon", (req, res) => {
